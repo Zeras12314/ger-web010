@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 32px;
+  font-family: "Inter", "sans-serif";
+  color: hsl(240, 38%, 20%);
+  place-content: center;
+  display: grid;
+  overflow-x: hidden;
+}
+
+section {
+  font-size: 0.6em;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5em;
+  max-width: 420px;
+  position: absolute;
+  padding-top: 3.3em;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.tanya-img,
+.john-img {
+  width: 270px;
+  height: 270px;
+  padding-bottom: 3.2em;
+}
+
+.text-content p {
+  padding: 0.5em 1em 1em 1em;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.pos {
+  font-weight: 500;
+  color: hsl(240, 18%, 77%);
+  line-height: 1em;
+  font-size: 0.8em;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -5;
+  width: 320px;
+  height: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(1em);
+}
+
+.img-quotes {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 70px;
+  height: 58px;
+  transform: translateY(11.9em);
+}
+
+.pattern-curve {
+  max-width: 420px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(1em);
+  height: 2.5em;
+}
+
+.icons {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 1em;
+  width: 60px;
+  height: 40px;
+  transform: translateY(9.7em);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  z-index: 5;
+}
+
+.icons2 {
+  z-index: -2;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-radius: 1em;
+  padding: 0 0.8em;
+  width: 10px;
+  height: 40px;
+  transform: translateY(9.7em);
+  box-shadow: -55px -20px 55px rgba(0, 0, 194, 0.2),
+    -55px 12px 38px rgba(0, 0, 0, 0.22);
+}
+
+#john {
+  opacity: 0;
+}
+
+.next {
+  padding-left: 8px;
+}
+
+.prev {
+  padding-right: 8px;
+}
+
+@media (min-width: 1300px) {
+  #tanya,
+  #john {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;
+
+    min-height: 100vh;
+    align-items: center;
+    padding: 0 8em;
+  }
+
+  .pattern-curve {
+    transform: translateY(0em);
+    bottom: 0;
+  }
+
+  .tanya-img,
+  .john-img {
+    width: 500px;
+    height: 500px;
+    padding-bottom: 3.2em;
+  }
+
+  .text-content {
+    font-size: 32px;
+    line-height: 1.3em;
+    text-align: left;
+    position: absolute;
+    padding: 0 13em 0 5em;
+  }
+
+  .name-pos {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0 1em;
+  }
+
+  .bg-img {
+    width: 600px;
+    height: 600px;
+    transform: translate(12em, 1em);
+  }
+
+  .img-quotes {
+    width: 90px;
+    height: 80px;
+    transform: translate(-13.5em, 6em);
+  }
+
+  .icons {
+    border-radius: 1em;
+    width: 60px;
+    height: 40px;
+    transform: translate(6em, 17.5em);
+  }
+
+  .icons2 {
+    padding: 0 0.8em;
+    width: 10px;
+    height: 40px;
+    transform: translate(6em, 17.5em);
+  }
+
+  .pattern-curve {
+    max-width: 50%;
+    bottom: 0;
+    height: 5em;
+    z-index: -5;
+  }
+}
