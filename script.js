@@ -14,11 +14,11 @@ next.onclick = function () {
 };
 
 prev.onclick = function () {
-  if (tanya.style.display === "1") {
-    tanya.style.display = "0";
-    john.style.display = "1";
+  if (tanya.style.opacity === "1") {
+    tanya.style.opacity = "0";
+    john.style.opacity = "1";
   } else {
-    tanya.style.display = "0";
-    john.style.display = "1";
+    tanya.style.opacity = "1";
+    john.style.opacity = "0";
   }
 };
